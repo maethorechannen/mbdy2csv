@@ -5,7 +5,7 @@ mbdy2csv converts BODYDATA.TXT files from a Salter MiBody scale to CSV.
 
 The file format decoding is based on the work of [the opensaltermibody project](http://code.google.com/p/opensaltermibody/ "opensatermibody project hosted on GoogleCode"). 
 
-This is a simple command line app that just converts the data that is held in a BODYDATA.TXT file (which isn't actually a text file) into a CSV file. No calculations on the data are made (such as converting values to non-metric equivalents, or BMI/BMR/Body Water values. About the only "processing" done on the input is that padding data is removed.
+This is a simple command line app that just converts the data that is held in a BODYDATA.TXT file (which isn't actually a text file) into a CSV file. No calculations on the data are made (such as converting values to non-metric equivalents, or BMI/BMR/Body Water value calculation). About the only "processing" done on the input is that padding data is removed.
 
 Compiling
 ---------

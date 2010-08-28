@@ -17,3 +17,7 @@ Usage
 
 TODO
 
+License
+-------
+
+GPL V3

@@ -1,6 +1,6 @@
 static int main (string[] args) {
     try {
-	var file = File.new_for_path ("BODYDATA.TXT");
+	var file = File.new_for_path (args[1]);
 
         // Open file for reading
         var file_stream = file.read (null);
@@ -12,7 +12,7 @@ static int main (string[] args) {
         uint8[] buffer = new uint8[18];
 	while(data_stream.read (buffer, 18, null) == 18) {
 		if (! isBufferEmpty(buffer)) {
-			stdout.printf("%ld,%ld,", pcount, slotcount);
+			stdout.printf("%ld,", pcount);
 			printBuffer(buffer);
 		} 
 

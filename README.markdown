@@ -25,6 +25,19 @@ user,year,month,day,hour,minute,second,gender,age,height,weight,fat,musle mass,v
 
 Height is in centimeters. Weight appears to be in hectograms (yes, hectograms).
 
+
+out2libra.py
+------------
+
+out2libra.py is a small python script that will read the output of mbdy2csv (from stdin) and convert
+the values for import into the Libra weight management app for Android. So,
+
+./mbdy2csv BODYDATA.TXT | ./out2libra.py > Libra.csv
+
+will create Libra.csv file suitable for importing into Libra. It currently only works if you have just one user
+and have set Libra to use kilograms.
+
+
 License
 -------
 
